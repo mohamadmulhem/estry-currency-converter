@@ -1,0 +1,17 @@
+(function ($) {
+    $(document).ready(function () {
+        // Dynamic initialization, currency data from Open Exchange Rates
+        var appId = '{$apikey}';
+        $.getJSON('{$prefix}://data.fixer.io/api/symbols?access_key=' + appId, function (response) {
+            var currencies = response.symbols;
+            $.getJSON('{$prefix}://data.fixer.io/api/latest?access_key=' + appId + '&base={$basecurrency}', {}, function (response) {
+                $.currencyr(currencies, response.base, {
+                    {$secondarycurrencies}
+                });
+                $('.{$cssclass}').currencyr({remember: false});
+            });
+        });
+        //tippy('.currency-icon', {trigger: 'click'});
+
+    });
+})(jQuery);

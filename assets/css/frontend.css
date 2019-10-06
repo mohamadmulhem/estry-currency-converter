@@ -1,0 +1,17 @@
+.currency-icon {
+    margin-right: 10px;
+	margin-left: 10px;
+    padding: 8px 8px 8px 8px;
+    border: 1px solid;
+    border-radius: 49px;
+    cursor: pointer;
+}
+.recent-properties .block article .link{
+	height:50% !important;
+}
+.currencyr-remember{
+	display:none;
+}
+.price{
+	cursor:pointer;
+}

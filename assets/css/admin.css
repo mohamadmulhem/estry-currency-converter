@@ -1,0 +1,8 @@
+.dropdown-menu {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.settings-container {
+    padding: 10px 10px 10px 10px;
+}
